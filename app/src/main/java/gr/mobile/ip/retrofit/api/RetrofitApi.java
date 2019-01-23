@@ -11,7 +11,7 @@ import retrofit2.http.Query;
 public interface RetrofitApi {
 
     @GET("{" + "ip" + "}")
-    Call<IpResponse> getIpAddress(@Path(value = "ip", encoded = true) String ip, @Query("access_key") String access_key);
+    Call<IpResponse> getCountry(@Path(value = "ip", encoded = true) String ip, @Query("access_key") String access_key);
 
     @GET("https://api.ipify.org/?format=json")
     Call<PublicIpResponse> getPublicIpAddress();
