@@ -15,4 +15,5 @@ public interface RetrofitApi {
 
     @GET("https://api.ipify.org/?format=json")
     Call<PublicIpResponse> getPublicIpAddress();
+
 }
